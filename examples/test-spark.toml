@@ -1,0 +1,17 @@
+# General Spark test configuration
+name = "test-spark"
+kernel = "default"
+autostart = true
+
+[resources]
+cpu = 1
+mem = 256
+
+[[links]]
+name = "eth0"
+interface = "tap0"
+
+[[cells]]
+path = "default"
+mountpoint = "/"
+boot = true
